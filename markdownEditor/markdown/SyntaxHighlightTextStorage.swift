@@ -41,7 +41,6 @@ class SyntaxHighlightTextStorage: NSTextStorage {
   }
   
   override func setAttributes(attrs: [NSObject : AnyObject]!, range: NSRange) {
-    //println("setAttributes:\(attrs) range:\(range)")
     
     beginEditing()
     backingStore.setAttributes(attrs, range: range)
@@ -61,15 +60,13 @@ class SyntaxHighlightTextStorage: NSTextStorage {
       
       regex.enumerateMatchesInString(backingStore.string, options: nil, range: searchRange) {
         match, flags, stop in
-        // apply the style
         
         let range = match!.range
         
         let matchRange = match.rangeAtIndex(1)
         self.addAttributes(attributes, range: matchRange)
         
-        //keyRange.location + keyRange.length - range.location
-        // reset the style to the original
+
         let maxRange = matchRange.location + matchRange.length
         
         if maxRange < self.length {

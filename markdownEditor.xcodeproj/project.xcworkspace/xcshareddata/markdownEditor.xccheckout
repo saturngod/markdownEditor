@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>969CF3A9-C004-4323-80E3-926B98ABD275</string>
+	<key>IDESourceControlProjectName</key>
+	<string>markdownEditor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>968BDE071B6B76927B3F3F87AEDC938CCFC6E690</key>
+		<string>github.com:saturngod/markdownEditor.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>markdownEditor.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>968BDE071B6B76927B3F3F87AEDC938CCFC6E690</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:saturngod/markdownEditor.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>968BDE071B6B76927B3F3F87AEDC938CCFC6E690</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>968BDE071B6B76927B3F3F87AEDC938CCFC6E690</string>
+			<key>IDESourceControlWCCName</key>
+			<string>markdownEditor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -32,7 +32,8 @@ class ViewController: UIViewController {
      let bodyFontSize = SGMDHelper.bodyFontSize()
     
     // Do any additional setup after loading the view, typically from a nib.
-    editor.createTextView(UIFont(name: "Menlo-Regular", size: bodyFontSize), content: "#header\nok")
+    editor.createTextView("#Hello\nThis is a markdown editor written in **Swift**. I *hope* you will like it.")
+      
     editor.becomeFirstResponder()
       firstTime = false;
     }

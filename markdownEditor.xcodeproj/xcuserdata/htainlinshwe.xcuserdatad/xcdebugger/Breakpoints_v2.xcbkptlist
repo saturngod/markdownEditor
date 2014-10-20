@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "createAttributesForFontStyle(_:withTrait:)"
+            landmarkName = "replaceCharactersInRange(_:withString:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435424757.090492"
+            timestampString = "435515533.47272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "applyStylesToRange(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -68,43 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435424757.090492"
+            timestampString = "435515533.47272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "applyStylesToRange(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435424757.090492"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "applyStylesToRange(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435429944.717513"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "performReplacementsForRange(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -116,12 +84,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435429944.717513"
+            timestampString = "435515533.47272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "processEditing()"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "SyntaxHighlightTextStorage"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
+            timestampString = "435515533.47272"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "update()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -132,43 +116,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435347887.509575"
+            timestampString = "435515533.47272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "setAttributes(_:range:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "markdownEditor/markdown/markdownEditor.swift"
-            timestampString = "435425959.338491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "createTextView(_:content:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435429944.717513"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "createHighlightPatterns()"
             landmarkType = "5">
          </BreakpointContent>
@@ -180,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435424757.090492"
+            timestampString = "435515533.47272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "applyStylesToRange(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -196,12 +148,26 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
-            timestampString = "435429944.717513"
+            timestampString = "435515533.47272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "performReplacementsForRange(_:)"
+            startingLineNumber = "162"
+            endingLineNumber = "162">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
+            timestampString = "435515533.47272"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "applyStylesToRange(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -211,45 +177,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "markdownEditor/markdown/markdownEditor.swift"
-            timestampString = "435425959.338491"
+            filePath = "markdownEditor/markdown/SyntaxHighlightTextStorage.swift"
+            timestampString = "435515533.47272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "textViewDidChange(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "markdownEditor/markdown/markdownEditor.swift"
-            timestampString = "435425959.338491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "textView(_:shouldChangeTextInRange:replacementText:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "markdownEditor/markdown/markdownEditor.swift"
-            timestampString = "435425959.338491"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "textViewDidChange(_:)"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "update()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

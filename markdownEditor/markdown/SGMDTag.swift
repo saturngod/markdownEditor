@@ -13,8 +13,8 @@ struct SGMDTag {
   
   // MARK: Default Value
   
-  static let DEFAULT_FONT = "Menlo"
-  static let COLOR_RED = UIColor(red: 0.796, green: 0.294, blue: 0.086, alpha: 1)
+  static let COLOR_RED = UIColor(red: 0.862, green: 0.196, blue: 0.184, alpha: 1)
+  static let COLOR_LIGHT_RED = UIColor(red: 0.796, green: 0.294, blue: 0.086, alpha: 1)
   static let COLOR_PURPLE = UIColor(red: 0.423, green: 0.443, blue: 0.768, alpha: 1)
   static let COLOR_DARK_PURPLE = UIColor(red: 0.305, green: 0.152, blue: 0.603, alpha: 1)
   static let COLOR_LIGHT_PINK = UIColor(red: 0.811, green: 0, blue: 0.603, alpha: 1)
@@ -38,27 +38,28 @@ struct SGMDTag {
   // MARK: Attribute
   static func defaultAttribute() -> [NSObject: AnyObject] {
     
-    return [NSFontAttributeName : UIFont(name: "Menlo-Regular", size: SGMDHelper.bodyFontSize()),NSForegroundColorAttributeName : UIColor.blackColor(),NSBackgroundColorAttributeName: UIColor.clearColor()]
+    return [NSFontAttributeName : UIFont(name: SGMDHelper.DEFAULT_FONT, size: SGMDHelper.bodyFontSize()),NSForegroundColorAttributeName : UIColor.blackColor(),NSBackgroundColorAttributeName: UIColor.clearColor()]
   }
   
   static func boldAtribute() -> [NSObject : AnyObject] {
-    var boldFont = UIFont(name: "Menlo-Bold", size: SGMDHelper.bodyFontSize())
+    var boldFont = UIFont(name: SGMDHelper.DEFAULT_BOLD_FONT, size: SGMDHelper.bodyFontSize())
     return [NSFontAttributeName : boldFont,NSForegroundColorAttributeName:COLOR_RED]
   }
   
   static func italicAtribute() -> [NSObject : AnyObject] {
-    var boldFont = UIFont(name: "Menlo-Italic", size: SGMDHelper.bodyFontSize())
-    return [NSFontAttributeName : boldFont,NSForegroundColorAttributeName:COLOR_RED]
+    var boldFont = UIFont(name: SGMDHelper.DEFAULT_ITALIC_FONT, size: SGMDHelper.bodyFontSize())
+    return [NSFontAttributeName : boldFont,NSForegroundColorAttributeName:COLOR_LIGHT_RED]
   }
   
   static func boldItalicAttribute() -> [NSObject : AnyObject] {
     //bold and italic
-    let boldItalicFont = UIFont(name: "Menlo-BoldItalic", size: SGMDHelper.bodyFontSize())
+    let boldItalicFont = UIFont(name: SGMDHelper.DEFAULT_BOLD_ITALIC_FONT, size: SGMDHelper.bodyFontSize())
     return [NSFontAttributeName : boldItalicFont]
   }
   
   static func headerAttribute() -> [NSObject : AnyObject] {
-    return [NSForegroundColorAttributeName : COLOR_PURPLE]
+    var boldFont = UIFont(name: SGMDHelper.DEFAULT_BOLD_FONT, size: SGMDHelper.bodyFontSize())
+    return [NSFontAttributeName : boldFont,NSForegroundColorAttributeName : COLOR_PURPLE]
   }
   
   static func linkAttribute() -> [NSObject : AnyObject] {

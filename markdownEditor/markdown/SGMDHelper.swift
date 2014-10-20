@@ -10,6 +10,11 @@ import UIKit
 
 struct SGMDHelper {
   
+  static let DEFAULT_FONT = "Menlo-Regular"
+  static let DEFAULT_BOLD_FONT = "Menlo-Bold"
+  static let DEFAULT_ITALIC_FONT = "Menlo-Italic"
+  static let DEFAULT_BOLD_ITALIC_FONT = "Menlo-BoldItalic"
+  
   static func bodyFontSize() -> NSNumber
   {
     let bodyFontDescriptor = UIFontDescriptor.preferredFontDescriptorWithTextStyle(UIFontTextStyleBody)
