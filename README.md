@@ -7,7 +7,7 @@ It support following syntax highlight for now
 - Link
 - Image Link
 - List
-- Code
+- Inline Code
 - Code Block (can't support full code block now.)
 
 ### Screenshot
