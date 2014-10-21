@@ -48,7 +48,10 @@ class SyntaxHighlightTextStorage: NSTextStorage {
     endEditing()
   }
   
-  
+  func defaultStyleInRange(styleRange:NSRange)
+  {
+    addAttributes(SGMDTag.defaultAttribute(), range: styleRange)
+  }
   
   func applyStylesToRange(searchRange: NSRange) {
     
@@ -58,7 +61,7 @@ class SyntaxHighlightTextStorage: NSTextStorage {
       
       let regex = NSRegularExpression(pattern: pattern, options: nil, error: nil)
       
-      regex.enumerateMatchesInString(backingStore.string, options: nil, range: searchRange) {
+      regex?.enumerateMatchesInString(backingStore.string, options: nil, range: searchRange) {
         match, flags, stop in
         
         let range = match!.range
@@ -90,7 +93,7 @@ class SyntaxHighlightTextStorage: NSTextStorage {
   
   override func processEditing() {
     super.processEditing()
-    performReplacementsForRange(self.editedRange)
+    //performReplacementsForRange(self.editedRange)
   }
   
   
@@ -108,7 +111,7 @@ class SyntaxHighlightTextStorage: NSTextStorage {
     
     // construct a dictionary of replacements based on regexes
     replacements = [
-      SGMDTag.Clear : SGMDTag.defaultAttribute(),
+      //SGMDTag.Clear : SGMDTag.defaultAttribute(),
       SGMDTag.Italic : SGMDTag.italicAtribute(),
       SGMDTag.Bold : SGMDTag.boldAtribute(),
       SGMDTag.Link : SGMDTag.linkAttribute(),

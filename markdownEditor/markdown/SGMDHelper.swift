@@ -15,10 +15,10 @@ struct SGMDHelper {
   static let DEFAULT_ITALIC_FONT = "Menlo-Italic"
   static let DEFAULT_BOLD_ITALIC_FONT = "Menlo-BoldItalic"
   
-  static func bodyFontSize() -> NSNumber
+  static func bodyFontSize() -> CGFloat
   {
     let bodyFontDescriptor = UIFontDescriptor.preferredFontDescriptorWithTextStyle(UIFontTextStyleBody)
-    return bodyFontDescriptor.fontAttributes()[UIFontDescriptorSizeAttribute] as NSNumber
+    return bodyFontDescriptor.fontAttributes()[UIFontDescriptorSizeAttribute] as CGFloat
   }
   
 

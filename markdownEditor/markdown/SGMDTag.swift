@@ -27,39 +27,41 @@ struct SGMDTag {
   
   static let Italic = "((_|\\*)\\w+(\\s\\w+)*(_|\\*))"
   static let Bold = "((__|\\*\\*)\\w+(\\s\\w+)*(__|\\*\\*))"
-  static let Header = "((^#+(.*)))"
+  static let Header = "(((^#+|\\n#+)(.*)))"
   static let Link = "(\\[([^\\]]+)\\]\\(([^\\)]+)\\))"
   static let ImageLink = "(!\\[([^\\]]+)\\]\\(([^\\)]+)\\))"
   static let Code = "(`(.*?)`)"
-  static let CodeBlock = "(^```)"
-  static let List = "(^\\-\\s|^\\*\\s)"
+  static let CodeBlock = "(```\\w*\\n[\\w\\s\\n]*\\n```)"
+  static let List = "((^\\-|\\n\\-|^\\*|\\n\\*)\\s)"
   static let Clear = "(^[\\w\\s\\$\\&\\+\\,\\:\\;\\=\\?\\@\\|\\'\\<\\>\\.\\^\\*\\(\\)\\%\\!\\-])"
   
   // MARK: Attribute
-  static func defaultAttribute() -> [NSObject: AnyObject] {
+  static func defaultAttribute() -> [NSObject : AnyObject] {
     
-    return [NSFontAttributeName : UIFont(name: SGMDHelper.DEFAULT_FONT, size: SGMDHelper.bodyFontSize()),NSForegroundColorAttributeName : UIColor.blackColor(),NSBackgroundColorAttributeName: UIColor.clearColor()]
+    let font = UIFont(name: "Menlo-Regular", size: SGMDHelper.bodyFontSize())
+      var dict = [NSFontAttributeName : font! , NSForegroundColorAttributeName : UIColor.blackColor(),NSBackgroundColorAttributeName: UIColor.clearColor()]
+      return dict
   }
   
   static func boldAtribute() -> [NSObject : AnyObject] {
-    var boldFont = UIFont(name: SGMDHelper.DEFAULT_BOLD_FONT, size: SGMDHelper.bodyFontSize())
-    return [NSFontAttributeName : boldFont,NSForegroundColorAttributeName:COLOR_RED]
+    let boldFont = UIFont(name: "Menlo-Bold", size: SGMDHelper.bodyFontSize())
+    return [NSFontAttributeName : boldFont!,NSForegroundColorAttributeName:COLOR_RED]
   }
   
   static func italicAtribute() -> [NSObject : AnyObject] {
-    var boldFont = UIFont(name: SGMDHelper.DEFAULT_ITALIC_FONT, size: SGMDHelper.bodyFontSize())
-    return [NSFontAttributeName : boldFont,NSForegroundColorAttributeName:COLOR_LIGHT_RED]
+    let italicFont = UIFont(name: "Menlo-Italic", size: SGMDHelper.bodyFontSize())
+    return [NSFontAttributeName : italicFont!,NSForegroundColorAttributeName:COLOR_RED]
   }
   
   static func boldItalicAttribute() -> [NSObject : AnyObject] {
     //bold and italic
-    let boldItalicFont = UIFont(name: SGMDHelper.DEFAULT_BOLD_ITALIC_FONT, size: SGMDHelper.bodyFontSize())
-    return [NSFontAttributeName : boldItalicFont]
+    let boldItalicFont = UIFont(name: "Menlo-BoldItalic", size: SGMDHelper.bodyFontSize())
+    return [NSFontAttributeName : boldItalicFont!]
   }
   
   static func headerAttribute() -> [NSObject : AnyObject] {
-    var boldFont = UIFont(name: SGMDHelper.DEFAULT_BOLD_FONT, size: SGMDHelper.bodyFontSize())
-    return [NSFontAttributeName : boldFont,NSForegroundColorAttributeName : COLOR_PURPLE]
+    let boldFont = UIFont(name: "Menlo-Bold", size: SGMDHelper.bodyFontSize())
+    return [NSFontAttributeName : boldFont!,NSForegroundColorAttributeName : COLOR_PURPLE]
   }
   
   static func linkAttribute() -> [NSObject : AnyObject] {
@@ -77,6 +79,7 @@ struct SGMDTag {
   static func listAttribute() -> [NSObject : AnyObject] {
     return [NSForegroundColorAttributeName : COLOR_BLUE_GRAY]
   }
+
   
   
   

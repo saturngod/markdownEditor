@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6562C99A19F6E25800249569 /* SGTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562C99919F6E25800249569 /* SGTextView.swift */; };
 		65BC194819F24C9B005A9B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC194719F24C9B005A9B56 /* AppDelegate.swift */; };
 		65BC194A19F24C9C005A9B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC194919F24C9C005A9B56 /* ViewController.swift */; };
 		65BC194D19F24C9C005A9B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BC194B19F24C9C005A9B56 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6562C99919F6E25800249569 /* SGTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SGTextView.swift; path = markdown/SGTextView.swift; sourceTree = "<group>"; };
 		65BC194219F24C9B005A9B56 /* markdownEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = markdownEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BC194619F24C9B005A9B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65BC194719F24C9B005A9B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				65BC196819F24CBF005A9B56 /* markdownEditor.swift */,
 				65BC196E19F25D24005A9B56 /* SGMDHelper.swift */,
 				C5376E6319F4CB4500E832BB /* SGMDTag.swift */,
+				6562C99919F6E25800249569 /* SGTextView.swift */,
 			);
 			name = markdown;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				TargetAttributes = {
 					65BC194119F24C9B005A9B56 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 4UP69BH7R6;
 					};
 					65BC195619F24C9C005A9B56 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -235,6 +239,7 @@
 				65BC196F19F25D24005A9B56 /* SGMDHelper.swift in Sources */,
 				65BC196B19F24CFC005A9B56 /* SyntaxHighlightTextStorage.swift in Sources */,
 				65BC194A19F24C9C005A9B56 /* ViewController.swift in Sources */,
+				6562C99A19F6E25800249569 /* SGTextView.swift in Sources */,
 				C5376E6419F4CB4500E832BB /* SGMDTag.swift in Sources */,
 				65BC196919F24CBF005A9B56 /* markdownEditor.swift in Sources */,
 				65BC194819F24C9B005A9B56 /* AppDelegate.swift in Sources */,
