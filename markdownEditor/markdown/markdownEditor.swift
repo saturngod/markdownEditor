@@ -8,7 +8,7 @@
 
 import UIKit
 
-class markdownEditor: UIView , UITextViewDelegate , NSLayoutManagerDelegate {
+class markdownEditor: UIView , UITextViewDelegate , NSLayoutManagerDelegate , UIScrollViewDelegate {
 
   var textView:SGTextView!
   var textStorage: SyntaxHighlightTextStorage!
@@ -67,8 +67,19 @@ class markdownEditor: UIView , UITextViewDelegate , NSLayoutManagerDelegate {
       timer = nil
     }
     
-    timer = NSTimer.scheduledTimerWithTimeInterval(0.7, target: self, selector: "updateSyntaxHighlight", userInfo: nil, repeats: false)
+    timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: "updateSyntaxHighlight", userInfo: nil, repeats: false)
 
+  }
+  
+  func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    
+    if let t = timer {
+      t.invalidate()
+      timer = nil
+    }
+    
+    timer = NSTimer.scheduledTimerWithTimeInterval(0.3, target: self, selector: "updateSyntaxHighlight", userInfo: nil, repeats: false)
+    
   }
   
   func updateSyntaxHighlight() {

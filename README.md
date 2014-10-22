@@ -25,4 +25,4 @@ Another reason for adding timer is , shouldn't do syntaxhihglighting again and a
 ### Todo
 
 - Tested on iPad 2 and it's too slow for so many words and syntax color. In iPhone 5s , it really fast and reduce the timer rate. 
-- Should redo syntax highlighting after scrolling 
+- ~~Should redo syntax highlighting after scrolling~~ 
