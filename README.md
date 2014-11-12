@@ -10,7 +10,7 @@ It support following syntax highlight for now
 - Inline Code
 - Code Block
 
-I am using **Text** but I didn't use the edit `self.editedRange` because it will have a lot of problem for syntax highlighting. Example , I put the `**bold**` and then do the backspace. It will be like `**bold`. But text is still bold. editedRange change and didn't get that bold character text range.
+I am using **TextKit** but I didn't use the edit `self.editedRange` because it will have a lot of problem for syntax highlighting. Example , I put the `**bold**` and then do the backspace. It will be like `**bold`. But text is still bold. editedRange change and didn't get that bold character text range.
 
 Another problem is code block and header. After line breaking edit range has been changed and header color attribute didn't reset. So, if I want to use header color, I can't use code block. If I want to use code block , I can't use header color if I am using editRange. (may be I am wrong).
 
@@ -24,5 +24,5 @@ Another reason for adding timer is , shouldn't do syntaxhihglighting again and a
 
 ### Todo
 
-- Tested on iPad 2 and it's too slow for so many words and syntax color. In iPhone 5s , it really fast and reduce the timer rate. 
+- Tested on iPad 2 and it's too slow for so many words and syntax color.
 - ~~Should redo syntax highlighting after scrolling~~ 
